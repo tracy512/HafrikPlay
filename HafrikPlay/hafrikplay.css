@@ -1,0 +1,249 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+body{
+  display: flex;
+  background-color: #262629;
+}
+
+.logo img{
+/* background-color: #262629; */
+margin-top: 10px;
+width: 90px;
+
+}
+
+ul li a{
+  text-decoration: none;
+}
+
+.side-bar{
+  background-color: #262629;
+  height: 90vh;
+  width: 200px;
+  height: 100vh; 
+  position: static;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 20px;
+}
+ul li:hover{
+  background: orange;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.content-sidebar h3{
+  color: green;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.library-list h3{
+  color: green;
+  font-size: 20px;
+}
+.events-list{
+  color: green;
+  font-size: 20px;
+}
+
+
+.content-sidebar ul{
+  padding: 10px 10px;
+}
+ul a span{
+  /* gap: 50px; */
+  color: #ffff;
+  font-size: 20px;
+}
+
+ul a{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* design for icons{} */
+ul li i{
+  color: #ffff;
+  font-size: 15px;
+}
+
+/* home design */
+.home{
+  color: green;
+}
+
+/* side-bar design ends here */
+
+/* navigation design  starts here */
+
+.content-main{
+  position: relative;
+  width: 90%;
+}
+.nav{
+  background-color: #262629;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* border-radius: 10px; */
+  /* margin-top: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+}
+
+.search-box{
+  position: relative;
+}
+
+.search-box input{
+  padding: 10px;
+  background-color:#9898A0;
+  color: #ffff;
+  outline: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  position: relative;
+  box-sizing: border-box;
+  text-indent: 20;
+
+  
+}
+.search-box button{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  font-size: 15px;
+  background-color: transparent;
+  outline: none;
+  border-style: none;
+}
+
+.search-box input::placeholder{
+  color: #c0bcbc;
+  font-size: 13px;
+  /* text-align: center; */
+
+}
+
+/* right nav design */
+
+.right-nav{
+  width: 350px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+ 
+}
+
+/* top songs slide show design here */
+
+
+.container{
+  width: 80%;
+  /* height: 60vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.swiper{
+  width: 70%;
+  height: fit-content;
+  
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+}
+
+
+.card-flex1{
+  display: flex;
+  
+}
+.card-flex1 img{
+  width: 90%;
+}
+
+.recom{
+  width: 100%;
+  background-color: #262629;
+  padding: 10px 10px;
+}
+
+.recom h3{
+  color: #ffff;
+  font-size: 20px;
+}
+
+
+/* play back section */
+
+.play-back{
+display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+/* Mobile responsive design */
+
+@media (max-width:600px) {
+
+  /* design for .side-bar */
+  .side-bar{
+      display: none;
+  }
+
+  /* navigation bar */
+ 
+  */
+
+  .search-box input{
+      width: 10%;
+  }
+  .nav{
+      width: 50%;
+  }
+
+  .play-back{
+      width: 100%;
+      display: flex;
+  }
+  .play-back img{
+      width: 90%;
+  }
+
+  .container{
+      width: 150%;
+      justify-content: left;
+  }
+  
+}
